@@ -1,0 +1,21 @@
+{
+  "domain": "hdhr",
+  "name": "HDHR Local",
+  "codeowners": [
+    "@nathandlawrence"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "frontend",
+    "http",
+    "panel_custom",
+    "webhook",
+    "websocket_api"
+  ],
+  "documentation": "https://github.com/nathandlawrence/hdhr-local",
+  "integration_type": "hub",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/nathandlawrence/hdhr-local/issues",
+  "requirements": [],
+  "version": "0.9.0"
+}

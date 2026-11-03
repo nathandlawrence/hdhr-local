@@ -1,0 +1,41 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Find HDHomeRun devices",
+        "description": "Searches your network for HDHomeRun tuners and DVR (RECORD) engines. Add addresses only for devices the search can't reach.",
+        "data": {
+          "hosts": "Extra device addresses, comma separated (optional)"
+        }
+      },
+      "names": {
+        "title": "Name your devices",
+        "description": "Found:\n{found}\n\nName each device, and each TV or player (by IP address) that is watching now. The names set the entity ids, so choose them now. The first field is the sidebar page title.",
+        "data": {
+          "panel_title": "Sidebar page title",
+          "more_players": "More players, as IP=Name, comma separated (optional)"
+        }
+      }
+    },
+    "error": {
+      "no_devices": "No HDHomeRun devices found. Enter a device address."
+    },
+    "abort": {
+      "already_configured": "HDHR Local is already set up."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Names",
+        "description": "Devices:\n{found}\n\nRename devices, players (by IP address) or the sidebar page. Existing entity ids stay the same.",
+        "data": {
+          "panel_title": "Sidebar page title",
+          "more_players": "More players, as IP=Name, comma separated (optional)",
+          "player_remotes": "TV remotes for voice/tune, as Player name=remote.entity, comma separated",
+          "tv_app": "App to open on a TV that is off (package name)"
+        }
+      }
+    }
+  }
+}
